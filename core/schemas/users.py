@@ -1,4 +1,6 @@
 from pydantic import BaseModel, Field, EmailStr, root_validator
+#https://github.com/ArtsemDev/bankapi
+from ..
 
 
 class RegisterForm(BaseModel):
@@ -39,3 +41,5 @@ class RegisterForm(BaseModel):
             raise ValueError('почта не должна содержаться в пароле')
 
         return values
+
+    class UserInfo(BaseModel):
